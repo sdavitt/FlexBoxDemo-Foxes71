@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+}
+
+/* begin navbar styling */
+.navbar {
+    display: flex;
+    border-color: blue;
+    border-width: 0 0 5px 0;
+    border-style: solid;
+    margin: 0px;
+    padding: 5px 0 0 0;
+}
+
+
+.navbar > ul {
+    display: flex;
+    width: 100%;
+    padding-left: 0px; /* if a style is being stubborn or overwritten, try adding the !important tag to make it the highest level of specificity */
+    justify-content: space-around;
+}
+
+/* specific navlink styling */
+.navlink {
+    display: inline-flex;
+    border-style: solid;
+    border-width: 2px;
+    background-color: lightslategrey;
+    border-color: blue;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+}
+
+.navlink > a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5vw;
+}
+
+.navlink:hover{
+    border-color: white;
+    box-shadow: 0 0 10px 5px blue;
+}
+
+
+.navlink > a:link{
+    color: white;
+}
+
+
+.navlink > a:hover{
+    color: blue;
+}
+
+#active {
+    color: blue;
+}
+
+#active:hover{
+    color: white;
+}
+
