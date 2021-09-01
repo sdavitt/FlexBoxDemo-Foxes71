@@ -60,3 +60,102 @@ body {
     color: white;
 }
 
+/* end navbar styling */
+
+/* main content layout */
+
+.content {
+    background-color: rgb(151, 150, 150);
+    display: flex;
+    justify-content: space-around;
+    padding: 2vh 0 0 0;
+    flex-direction: column;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+}
+
+.card {
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+}
+
+#fox1 {
+    max-width: 90%;
+    max-height: 90%;
+    height: auto;
+}
+
+#fox2 {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+
+#leftcol {
+    max-width: 100%;
+}
+
+#rightcol {
+    max-width: 100%;
+}
+
+@media(max-width: 2000px){
+    #leftcol {
+        max-width: 60%;
+    }
+
+    #rightcol {
+        max-width: 30%;
+    }
+    
+    .column {
+        background-color: coral;
+    }
+
+    .content {
+        flex-direction: row;
+    }
+}
+
+@media(max-width: 1000px){
+    #leftcol {
+        max-width: 65%;
+    }
+
+    #rightcol {
+        max-width: 33%;
+    }
+    
+    .column {
+        background-color: red;
+    }
+
+    .content {
+        flex-direction: row;
+    }
+}
+/* end main content layout */
+
+
+#infobtn:hover {
+    background-color: red;
+    width: 100%;
+}
+
+#contentbox {
+    margin-top: 2vh;
+    max-width: 100%;
+}
+
+#contentbox > .row {
+    width: 100%;
+}
+
+.card {
+    margin-bottom: 1vh;
+}
